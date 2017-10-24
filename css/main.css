@@ -1,0 +1,17 @@
+.icon {
+	width: 50px;
+	height: 50px;
+	margin: 30px;
+	-webkit-filter: invert(50%);
+    filter: invert(50%);	
+}
+
+.icon:hover {
+	opacity:0.9 !important;
+	-webkit-filter: invert(0);
+    filter: invert(0);
+}
+
+.mono {
+    font-family: Courier New, Helvetica;
+}
