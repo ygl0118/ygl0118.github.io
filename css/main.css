@@ -1,20 +1,28 @@
-.mainBlock{
+#main {
   background-image: url('../image/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.mainBlock div {
-  padding: 200px 0;
+#main div {
+  padding: 350px 0;
+  text-align: center;
 }
 
 .mainFont {
-  text-align: center;
-  font-style: bold;
   font-size: 900%;
   font-family: Lithos Pro Regular, Helvetica;
   text-shadow: 4px 4px #ffffff;
+  display: inline;
+}
+
+.rightFont {
+  padding-left: 25%;
+}
+
+#about {
+  display: none;
 }
 
 .icon {
@@ -35,11 +43,41 @@
   font-family: Courier New, Helvetica;
 }
 
-@media screen and (max-width: 900px) {
-	.mainBlock{
-	  padding-bottom: 75%;
-	}
-	.mainBlock div {
-	  padding: 0;
-	}
+#contact {
+  display: none;
+  background-color: #000000;
+  height: 100%;
+}
+
+.mapBlock {
+  text-align: right;
+  height: 400px;
+}
+
+#map {
+  width: 50%;
+  height: 100%;
+  border: 0;
+}
+
+@media screen and (max-width: 720px) {
+  #main div {
+    padding: 0;
+  }
+  .mainFont {
+    padding: 0;
+    display: block;		
+  }
+  .rightFont {
+    padding-bottom: 30%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainFont {
+    font-size: 600%;	
+  }	
+  #main div {
+    padding: 375px 0;
+  }  
 }

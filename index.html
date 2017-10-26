@@ -12,12 +12,12 @@
 </head>
 
   <body>
-    <div class="mainBlock">
+    <div id="main" class="mainBlock">
 	  <div>
-	    <p class="mainFont">Uren　You</p>
+	    <p class="mainFont">Uren</p><p class="mainFont rightFont">You</p>
 	  </div>
 	</div>
-    <div class="container">
+    <div id="about" class="sectionBlock container">
       <div class="jumbotron mt-3">
 		<div align="center">
 		  <h2 class="mono">Profile</h2>
@@ -27,13 +27,23 @@
 		  <a target="_blank" href="https://www.instagram.com/uuuren"><img class="icon" src="image/icon/instagram.png"></a>
 		  <a href="mailto:ygl0118@gmail.com"><img class="icon" src="image/icon/mail.png"></a>
 		</div>
+      </div>
+    </div>
+    <div id="exp" class="sectionBlock container">
+      <div class="jumbotron mt-3">
 		<div align="center">
-		  <h2 class="mono">Project</h2>
+		  <h2 class="mono">Experience</h2>
 		  <a target="_blank" href="http://sideex.org"><img class="icon" src="image/icon/sideex.png"></a>
+		  <a target="_blank" href="https://hackmd.io/s/SkhixDKkb"><img class="icon" src="image/icon/trendmicro.png"></a>
 		</div>
 		<div align="center">
-          <a class="btn btn-lg btn-primary" href="#" role="button">This is a good button</a>
+          <a class="btn btn-lg btn-primary" target="_blank" href="#" role="button">This is a good button</a>
 		</div>
+      </div>
+    </div>
+    <div id="contact" class="sectionBlock">
+      <div class="mapBlock">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.696068922633!2d120.21636541538025!3d22.998201223008696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7692ccc7a805%3A0xebb88a81cea597db!2sSideeX+Headquarters!5e0!3m2!1szh-TW!2stw!4v1509033477676" allowfullscreen></iframe>
       </div>
     </div>
     <nav class="navbar fixed-bottom navbar-expand navbar-dark bg-dark">
@@ -44,16 +54,16 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a id="mainLink" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a id="aboutLink" class="nav-link" href="#">About</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
+            <a id="expLink" class="nav-link" href="#">Experience</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a id="contactLink" class="nav-link" href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -66,7 +76,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/popper.js"></script>
+    <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
